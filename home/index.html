@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Welcome -->
+    <div class="welcome-screen">
+
+      <img src="./google.png" alt="Welcome Image" />
+      <h1>Welcome to the app</h1>
+      <p>
+        We’re excited to help you book and manage your service appointments with
+        ease.
+      </p>
+      <button class="login-btn">Login</button>
+      <a href="#" class="create-account">Create an account</a>
+    </div>
+
+    <!-- Login  -->
+    <div class="login-screen">
+      <h2>Login</h2>
+      <p>Welcome back to the app</p>
+
+      <form action="#">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="hello@example.com" />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••••" />
+
+        <div class="extra-options">
+          <div class="checkbox">
+            <input type="checkbox" id="keep-signed-in" checked />
+            <label for="keep-signed-in">Keep me signed in</label>
+          </div>
+          <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+
+        <button class="login-btn">Login</button>
+      </form>
+
+      <p>or sign in with</p>
+      <button class="google-btn">
+        <img src="google.png" alt="Google Icon" /> Continue with Google
+      </button>
+
+      <a href="#" class="create-account">Create an account</a>
+    </div>
+
+    <!-- Logout -->
+    <div class="form-container">
+        <h1>Create an account</h1>
+
+        <form action="#">
+          <div class="input-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="John Doe" />
+          </div>
+
+          <div class="input-field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="hello@example.com" />
+          </div>
+
+          <div class="input-field">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="********" />
+            <i class="fa-solid fa-eye"></i>
+          </div>
+
+          <p>
+            By continuing, you agree to our <a href="#">terms of service.</a>
+          </p>
+
+          <button type="submit" class="signup-btn">Sign up</button>
+
+          <div class="or-container">
+            <span>or</span>
+          </div>
+
+          <button class="google-btn">
+            <i class="fa-brands fa-google"></i> Continue with Google
+          </button>
+
+          <p class="signin-text">
+            Already have an account? <a href="#">Sign in here</a>
+          </p>
+        </form>
+      </div>
+  </body>
+</html>
